@@ -6,7 +6,7 @@ on:
       - master
       - dev
 env:
-  MONGODB_DB_NAME: gha-demo    #This one is generally the same for all environments
+  MONGODB_DB_NAME: gha-demo    #This one is generally the same for all environments 
 jobs:
   test:
     environment: test
