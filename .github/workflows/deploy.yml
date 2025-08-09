@@ -12,8 +12,8 @@ jobs:
     env:
       #This is specific to the environment
       MONGODB_CLUSTER_ADDRESS: cluster0.8fidzop.mongodb.net
-      MONGODB_USERNAME: maximilian
-      MONGODB_PASSWORD: mahisweet
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
