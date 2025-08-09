@@ -9,6 +9,7 @@ env:
   MONGODB_DB_NAME: gha-demo    #This one is generally the same for all environments
 jobs:
   test:
+    environment: test
     env:
       #This is specific to the environment
       MONGODB_CLUSTER_ADDRESS: cluster0.8fidzop.mongodb.net
